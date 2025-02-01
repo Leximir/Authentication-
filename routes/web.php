@@ -18,7 +18,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::middleware('auth')->prefix('forecast')->group(function() {
-    Route::get('/' , );
+    Route::get('/' , [\App\Http\Controllers\CityTemperatureController::class , 'index'] );
 });
 
 
