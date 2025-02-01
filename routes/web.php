@@ -21,5 +21,7 @@ Route::middleware('auth')->prefix('forecast')->group(function() {
     Route::get('/' , [\App\Http\Controllers\CityTemperatureController::class , 'index'] );
 });
 
+Route::middleware('auth' , );
+
 
 require __DIR__.'/auth.php';
